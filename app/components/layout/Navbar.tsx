@@ -75,22 +75,22 @@ export default function Navbar() {
 
         {/* CTA — dark pill with arrow icon */}
         <Link
-          href="/contact"
-          className="hidden md:flex items-center gap-3 bg-[#1c1c1c] border border-white/10 rounded-full px-5 py-2.5 text-sm font-semibold text-white hover:bg-[var(--yellow)] hover:text-black hover:border-transparent transition-all duration-300 group"
-        >
-          Contact Us
-          <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 group-hover:bg-black/20">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-              <path
-                d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </span>
-        </Link>
+  href="/contact"
+  className="flex items-center gap-3 bg-[#1c1c1c] border border-white/10 rounded-full px-5 py-2.5 text-sm font-semibold text-white hover:bg-[var(--yellow)] hover:text-black hover:border-transparent transition-all duration-300 group"
+>
+  Contact Us
+  <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 group-hover:bg-black/20">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+      <path
+        d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </span>
+</Link>
 
       </nav>
     </header>
