@@ -3,13 +3,13 @@ export default function ContactForm() {
     <section className="relative bg-[#0a0a0a] py-16 px-6 pb-48 overflow-hidden">
 
       {/* Watermark */}
-      <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[20vw] font-black text-white/5 leading-none select-none pointer-events-none whitespace-nowrap">
+      <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 text-[20vw] font-black text-white/5 leading-none select-none pointer-events-none whitespace-nowrap">
         ClearWater
       </div>
 
       <div className="max-w-5xl mx-auto relative z-10">
         {/* Label */}
-        <p className="text-[#F7F217] text-sm font-semibold mb-3">Clean waters ®</p>
+        <p className="text-[#F7F217] text-sm font-semibold mb-3">ClearWater ®</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
 

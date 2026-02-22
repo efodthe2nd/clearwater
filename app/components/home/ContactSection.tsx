@@ -3,7 +3,7 @@ export default function ContactSection() {
     <section className="relative bg-[var(--black)] py-24 pb-48 px-6 overflow-hidden">
       {/* Large watermark text */}
       {/* Large watermark text */}
-      <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-[20vw] font-black text-white/5 leading-none select-none pointer-events-none whitespace-nowrap">
+      <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 text-[20vw] font-black text-white/5 leading-none select-none pointer-events-none whitespace-nowrap">
         ClearWater
       </div>
 

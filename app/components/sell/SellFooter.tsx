@@ -6,7 +6,7 @@ export default function SellFooter() {
         <div className="invisible text-[20vw] font-black leading-none whitespace-nowrap select-none">
           ClearWater
         </div>
-        <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 text-[20vw] font-black text-white/5 leading-none select-none pointer-events-none whitespace-nowrap">
+        <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 text-[20vw] font-black text-white/5 leading-none select-none pointer-events-none whitespace-nowrap">
           ClearWater
         </div>
       </div>
