@@ -22,7 +22,7 @@ export default function OurFounders() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {founders.map((founder) => (
             <div key={founder.name} className="text-center md:text-left">
-              <div className="flex items-center gap-3 justify-center md:justify-start mb-6">
+              <div className="flex items-center gap-3 justify-center md:justify-start mb-2">
                 <h3 className="text-white font-black text-2xl md:text-3xl">{founder.name}</h3>
                 <span className="border border-[#F7F217] text-[#F7F217] text-xs font-semibold px-3 py-1 rounded-full">
                   {founder.role}
