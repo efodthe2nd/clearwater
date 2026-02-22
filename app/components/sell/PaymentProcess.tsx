@@ -50,10 +50,10 @@ export default function PaymentProcess() {
   return (
     <section className="bg-[#0a0a0a] py-20 px-6">
       <div className="max-w-2xl mx-auto">
-        <h2 className="text-white font-bold text-3xl md:text-4xl text-center mb-4 font-mono">
+        <h2 className="text-white font-bold text-3xl md:text-4xl text-center mb-4">
           Payment Process?
         </h2>
-        <p className="text-white/50 text-sm text-center font-mono mb-12">
+        <p className="text-white/50 text-sm text-center mb-12">
           We keep payment safe and straightforward, so you never have to worry about getting paid.
         </p>
 
@@ -65,9 +65,9 @@ export default function PaymentProcess() {
             >
               <div className="flex items-center gap-3 mb-4">
                 {p.icon}
-                <h3 className="text-white font-bold text-base font-mono">{p.title}</h3>
+                <h3 className="text-white font-bold text-base">{p.title}</h3>
               </div>
-              <p className="text-white/50 text-sm leading-relaxed font-mono">{p.description}</p>
+              <p className="text-white/50 text-sm leading-relaxed">{p.description}</p>
             </div>
           ))}
         </div>

@@ -54,7 +54,7 @@ export default function WhyUs() {
   return (
     <section className="bg-[#0a0a0a] py-20 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-white font-bold text-3xl md:text-4xl text-center mb-12 font-mono">
+        <h2 className="text-white font-bold text-3xl md:text-4xl text-center mb-12">
           Why Us ?
         </h2>
 
@@ -64,8 +64,8 @@ export default function WhyUs() {
               <div className="w-12 h-12 rounded-full bg-[#161616] flex items-center justify-center border border-white/10">
                 {r.icon}
               </div>
-              <h3 className="text-white font-bold text-xs font-mono">{r.title}</h3>
-              <p className="text-white/40 text-xs leading-relaxed font-mono">{r.description}</p>
+              <h3 className="text-white font-bold text-xs">{r.title}</h3>
+              <p className="text-white/40 text-xs leading-relaxed">{r.description}</p>
             </div>
           ))}
         </div>

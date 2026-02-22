@@ -45,12 +45,12 @@ export default function BrandsList() {
             key={brand.slug}
             className="border border-white/10 rounded-2xl p-8"
           >
-            <h2 className="text-white font-bold text-xl mb-6 font-mono">{brand.name}</h2>
+            <h2 className="text-white font-bold text-xl mb-6">{brand.name}</h2>
 
             <div className={`flex gap-6 items-start ${brand.imageRight ? 'flex-row' : 'flex-row-reverse'}`}>
               {/* Text */}
               <div className="flex-1">
-                <p className="text-white/50 text-sm leading-relaxed font-mono line-clamp-4">
+                <p className="text-white/50 text-sm leading-relaxed line-clamp-4">
                   {brand.description}
                 </p>
               </div>

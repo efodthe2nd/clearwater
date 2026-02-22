@@ -25,7 +25,7 @@ export default function HowItWorks() {
   return (
     <section className="bg-[#0a0a0a] py-20 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-white font-bold text-3xl md:text-4xl text-center mb-12 font-mono">
+        <h2 className="text-white font-bold text-3xl md:text-4xl text-center mb-12">
           How it works
         </h2>
 
@@ -38,8 +38,8 @@ export default function HowItWorks() {
               <div className="w-8 h-8 rounded-full bg-[#F7F217] flex items-center justify-center mb-4">
                 <span className="text-black font-black text-sm">{step.number}</span>
               </div>
-              <h3 className="text-white font-bold text-sm mb-3 font-mono">{step.title}</h3>
-              <p className="text-white/50 text-xs leading-relaxed font-mono">{step.description}</p>
+              <h3 className="text-white font-bold text-sm mb-3">{step.title}</h3>
+              <p className="text-white/50 text-xs leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>
