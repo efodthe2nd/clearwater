@@ -60,7 +60,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   className={`text-sm font-medium transition-colors duration-200 relative group ${
-                    isActive ? 'text-[var(--yellow)]' : 'text-white/70 hover:text-white'
+                    isActive ? 'text-[#fbd305]' : 'text-white/70 hover:text-white'
                   }`}
                 >
                   {link.label}
@@ -76,7 +76,7 @@ export default function Navbar() {
         {/* CTA — dark pill with arrow icon */}
         <Link
   href="/contact"
-  className="flex items-center gap-3 bg-[#1c1c1c] border border-white/10 rounded-full px-5 py-2.5 text-sm font-semibold text-white hover:bg-[var(--yellow)] hover:text-black hover:border-transparent transition-all duration-300 group"
+  className="flex items-center gap-3 bg-[#1c1c1c] border border-white/10 rounded-full px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#fbd305] hover:text-black hover:border-transparent transition-all duration-300 group"
 >
   Contact Us
   <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 group-hover:bg-black/20">
