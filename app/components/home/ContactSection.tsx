@@ -9,7 +9,7 @@ export default function ContactSection() {
 
       <div className="max-w-7xl mx-auto">
         {/* Top label */}
-        <p className="text-[var(--yellow)] text-sm font-semibold mb-3 tracking-wide">
+        <p className="text-[#fbd305] text-sm font-semibold mb-3 tracking-wide">
           Clearwater ®
         </p>
 
@@ -25,7 +25,7 @@ export default function ContactSection() {
                 <p className="text-white font-bold text-sm">Email:</p>
                 <a
                   href="mailto:john@ClearwaterMediaGroup.com"
-                  className="text-white/70 text-sm hover:text-[var(--yellow)] transition-colors"
+                  className="text-white/70 text-sm hover:text-[#fbd305] transition-colors"
                 >
                   john@ClearwaterMediaGroup.com
                 </a>
@@ -46,27 +46,27 @@ export default function ContactSection() {
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full bg-transparent border-b border-white/20 pb-3 text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-[var(--yellow)] transition-colors"
+                className="w-full bg-transparent border-b border-white/20 pb-3 text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-[#fbd305] transition-colors"
               />
             </div>
             <div>
               <input
                 type="email"
                 placeholder="Email"
-                className="w-full bg-transparent border-b border-white/20 pb-3 text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-[var(--yellow)] transition-colors"
+                className="w-full bg-transparent border-b border-white/20 pb-3 text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-[#fbd305] transition-colors"
               />
             </div>
             <div className="pt-2">
               <textarea
                 placeholder="Message"
                 rows={4}
-                className="w-full bg-transparent border-b border-white/20 pb-3 text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-[var(--yellow)] transition-colors resize-none"
+                className="w-full bg-transparent border-b border-white/20 pb-3 text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-[#fbd305] transition-colors resize-none"
               />
             </div>
             <div className="flex justify-end pt-2">
               <button
                 type="submit"
-                className="bg-[var(--yellow)] text-black font-bold text-sm px-8 py-3 rounded-full hover:bg-white transition-colors duration-300"
+                className="bg-[#fbd305] text-black font-bold text-sm px-8 py-3 rounded-full hover:bg-white transition-colors duration-300"
               >
                 Submit
               </button>

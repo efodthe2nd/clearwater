@@ -12,7 +12,7 @@ const features = [
   {
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-        <path d="M12 3L4 7v5c0 4.418 3.582 8.618 8 9.9C16.418 20.618 20 16.418 20 12V7L12 3z" fill="#fbd405"/>
+        <path d="M12 3L4 7v5c0 4.418 3.582 8.618 8 9.9C16.418 20.618 20 16.418 20 12V7L12 3z" fill="#fbd305"/>
         <path d="M9 12l2 2 4-4" stroke="#0a0a0a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
@@ -46,7 +46,7 @@ export default function WeBuySitesSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="font-black leading-tight">
-            <span className="text-[var(--yellow)] text-4xl md:text-6xl block">We Buy Sites</span>
+            <span className="text-[#fbd305] text-4xl md:text-6xl block">We Buy Sites</span>
             <span className="text-white text-4xl md:text-6xl block">Fast, Fair, No Hassle</span>
           </h2>
           <p className="text-white/50 mt-5 text-base leading-relaxed">
@@ -79,13 +79,13 @@ export default function WeBuySitesSection() {
               border: '1px solid rgba(255,255,255,0.08)',
             }}
           >
-            <span className="text-[var(--yellow)] font-black leading-none" style={{ fontSize: 'clamp(5rem, 12vw, 7rem)' }}>
+            <span className="text-[#fbd305] font-black leading-none" style={{ fontSize: 'clamp(5rem, 12vw, 7rem)' }}>
               20
             </span>
             <p className="text-white font-semibold text-base mt-2">Days Maximum</p>
             <p className="text-white/60 text-sm mt-1">
               We Close Most Deals{' '}
-              <span className="text-[var(--yellow)] font-semibold">in 7 to 10 Days</span>
+              <span className="text-[#fbd305] font-semibold">in 7 to 10 Days</span>
             </p>
           </div>
         </div>
@@ -94,10 +94,10 @@ export default function WeBuySitesSection() {
         <div className="flex justify-center mt-14">
           <a
             href="/sell"
-            className="flex items-center gap-3 bg-[#1a1a1a] border border-white/10 rounded-full pl-6 pr-2 py-2 text-white font-semibold text-sm hover:bg-[var(--yellow)] hover:text-black hover:border-transparent transition-all duration-300 group"
+            className="flex items-center gap-3 bg-[#1a1a1a] border border-white/10 rounded-full pl-6 pr-2 py-2 text-white font-semibold text-sm hover:bg-[#fbd305] hover:text-black hover:border-transparent transition-all duration-300 group"
           >
             Learn More
-            <span className="w-8 h-8 rounded-full bg-[var(--yellow)] text-black flex items-center justify-center group-hover:bg-black group-hover:text-[var(--yellow)] transition-all duration-300">
+            <span className="w-8 h-8 rounded-full bg-[#fbd305] text-black flex items-center justify-center group-hover:bg-black group-hover:text-[#fbd305] transition-all duration-300">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                 <path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>

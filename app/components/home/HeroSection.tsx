@@ -26,13 +26,13 @@ export default function HeroSection() {
         <div className="max-w-xl">
           <h1 className="font-black leading-[0.88] tracking-tight">
             <span
-              className="block text-[var(--yellow)]"
+              className="block text-[#fbd405]"
               style={{ fontSize: 'clamp(3.5rem, 9vw, 7.5rem)' }}
             >
               Clearwater
             </span>
             <span
-              className="block text-[var(--yellow)]"
+              className="block text-[#fbd405]"
               style={{ fontSize: 'clamp(3.5rem, 9vw, 7.5rem)' }}
             >
               Media

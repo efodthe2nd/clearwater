@@ -71,7 +71,7 @@ export default function BrandsSection() {
           </div>
 
           {/* Right: Brand Info */}
-          <div className="bg-[var(--yellow)] rounded-2xl p-8 flex flex-col gap-6">
+          <div className="bg-[#fbd405] rounded-2xl p-8 flex flex-col gap-6">
 
             {/* Logo */}
             <div className="relative h-9 w-40 self-start">
@@ -112,7 +112,7 @@ export default function BrandsSection() {
               onClick={() => setActive(i)}
               aria-label={`Brand ${i + 1}`}
               className={`w-2.5 h-2.5 rounded-full transition-all duration-200 ${
-                i === active ? 'bg-[var(--yellow)]' : 'bg-white/30 hover:bg-white/60'
+                i === active ? 'bg-[#fbd405]' : 'bg-white/30 hover:bg-white/60'
               }`}
             />
           ))}
