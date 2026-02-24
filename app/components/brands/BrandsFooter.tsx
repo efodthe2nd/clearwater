@@ -12,7 +12,7 @@ export default function BrandsFooter() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-[#F7F217] py-4 px-6">
+      <footer className="bg-[#fbd305] py-4 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-black text-xs font-medium">
             © 2026 Clearwaters Media Group. All Rights Reserved.

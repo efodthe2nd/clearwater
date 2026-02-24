@@ -2,9 +2,9 @@ const payments = [
   {
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <rect x="2" y="5" width="20" height="14" rx="2" fill="#F7F217" opacity="0.2" stroke="#F7F217" strokeWidth="1.5"/>
-        <path d="M2 10h20" stroke="#F7F217" strokeWidth="1.5"/>
-        <path d="M6 15h4" stroke="#F7F217" strokeWidth="1.5" strokeLinecap="round"/>
+        <rect x="2" y="5" width="20" height="14" rx="2" fill="#fbd305" opacity="0.2" stroke="#fbd305" strokeWidth="1.5"/>
+        <path d="M2 10h20" stroke="#fbd305" strokeWidth="1.5"/>
+        <path d="M6 15h4" stroke="#fbd305" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     title: 'Escrow Protection',
@@ -14,8 +14,8 @@ const payments = [
   {
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="9" stroke="#F7F217" strokeWidth="1.5" fill="none"/>
-        <path d="M12 7v5l3 3" stroke="#F7F217" strokeWidth="1.5" strokeLinecap="round"/>
+        <circle cx="12" cy="12" r="9" stroke="#fbd305" strokeWidth="1.5" fill="none"/>
+        <path d="M12 7v5l3 3" stroke="#fbd305" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     title: 'Step-by-Step Transparency',
@@ -25,7 +25,7 @@ const payments = [
   {
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#F7F217" stroke="#F7F217" strokeWidth="1.5"/>
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#fbd305" stroke="#fbd305" strokeWidth="1.5"/>
       </svg>
     ),
     title: "You're in Control",
@@ -37,7 +37,7 @@ const payments = [
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
         <circle cx="12" cy="8" r="4" stroke="#F7F217" strokeWidth="1.5" fill="none"/>
         <path d="M4 20c0-4 3.58-7 8-7s8 3 8 7" stroke="#F7F217" strokeWidth="1.5" strokeLinecap="round" fill="none"/>
-        <path d="M9 12h6" stroke="#F7F217" strokeWidth="1.5" strokeLinecap="round"/>
+        <path d="M9 12h6" stroke="#fbd305" strokeWidth="1.5" strokeLinecap="round"/>
       </svg>
     ),
     title: 'No Hidden Fees',

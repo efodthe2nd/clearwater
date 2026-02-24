@@ -24,7 +24,7 @@ export default function OurFounders() {
             <div key={founder.name} className="text-center md:text-left">
               <div className="flex items-center gap-3 justify-center md:justify-start mb-2">
                 <h3 className="text-white font-black text-2xl md:text-3xl">{founder.name}</h3>
-                <span className="border border-[#F7F217] text-[#F7F217] text-xs font-semibold px-3 py-1 rounded-full">
+                <span className="border border-[#fbd305] text-[#fbd305] text-xs font-semibold px-3 py-1 rounded-full">
                   {founder.role}
                 </span>
               </div>

@@ -4,7 +4,7 @@ export default function SellHero() {
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-white font-bold text-4xl md:text-5xl leading-tight mb-8">
           Get an offer. Close in{' '}
-          <span className="text-[#F7F217]">a week</span>
+          <span className="text-[#fbd305]">a week</span>
         </h1>
         <p className="text-white/60 text-base leading-relaxed max-w-xl mx-auto">
           We buy blogs and content sites of all sizes — whether you're just starting out or ready to

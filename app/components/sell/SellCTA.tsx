@@ -5,7 +5,7 @@ export default function SellCTA() {
 
         {/* Quote */}
         <div className="text-center">
-          <div className="text-[#F7F217] text-4xl font-serif leading-none mb-4">"</div>
+          <div className="text-[#fbd305] text-4xl font-serif leading-none mb-4">"</div>
           <p className="text-white/60 text-sm leading-relaxed italic">
             Your payment is 100% safe, protected by escrow, and delivered fast —
             <br />no exceptions.
@@ -16,7 +16,7 @@ export default function SellCTA() {
         <div className="border border-white/10 rounded-2xl p-10 text-center">
           <h2 className="text-white font-bold text-2xl mb-4">
             Thinking About Selling? Let's{' '}
-            <span className="text-[#F7F217]">Talk</span>
+            <span className="text-[#fbd305]">Talk</span>
           </h2>
           <p className="text-white/50 text-sm font-mono leading-relaxed mb-8 max-w-md mx-auto">
             Doesn't matter if your site is booming or just getting by — we'll give you a fair,

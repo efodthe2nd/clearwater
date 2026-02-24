@@ -9,13 +9,13 @@ export default function ContactForm() {
 
       <div className="max-w-5xl mx-auto relative z-10">
         {/* Label */}
-        <p className="text-[#edc13e] text-sm font-semibold mb-3">ClearWater ®</p>
+        <p className="text-[#fbd305] text-sm font-semibold mb-3">ClearWater ®</p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
 
           {/* Left: Info */}
           <div>
-            <h2 className="text-[#edc13e] font-black text-5xl md:text-7xl leading-tight mb-10">
+            <h2 className="text-[#fbd305] font-black text-5xl md:text-7xl leading-tight mb-10">
               Get in touch
             </h2>
             <div className="space-y-6">

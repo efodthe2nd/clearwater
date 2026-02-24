@@ -9,7 +9,7 @@ export default function AboutFooter() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-[#F7F217] py-4 px-6">
+      <footer className="bg-[#fbd305] py-4 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
           <p className="text-black text-xs font-medium">
             © 2026 Clearwaters Media Group. All Rights Reserved.

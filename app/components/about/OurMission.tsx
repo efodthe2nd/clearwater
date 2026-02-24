@@ -10,7 +10,7 @@ export default function OurMission() {
     <section className="relative bg-[#0a0a0a] py-20 px-6">
       <div className="max-w-2xl mx-auto text-center">
         <h2 className="text-white font-bold text-4xl md:text-5xl mb-8">
-          Our <span className="text-[#F7F217]">Mission</span>
+          Our <span className="text-[#fbd305]">Mission</span>
         </h2>
         <p className="text-white/60 text-base leading-relaxed mb-6">
           We're here to do digital media differently—by valuing real stories, strong communities,
