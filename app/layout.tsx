@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={outfit.variable}>
-      <body className="pb-16 md:pb-0">
+      <body className="font-outfit pb-16 md:pb-0">
         {children}
         <BottomNav />
       </body>

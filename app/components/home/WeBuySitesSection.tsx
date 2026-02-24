@@ -92,7 +92,7 @@ export default function WeBuySitesSection() {
 
         {/* CTA */}
         <div className="flex justify-center mt-14">
-          
+          <a
             href="/sell"
             className="flex items-center gap-3 bg-[#1a1a1a] border border-white/10 rounded-full pl-6 pr-2 py-2 text-white font-semibold text-sm hover:bg-[#F7F217] hover:text-black hover:border-transparent transition-all duration-300 group"
           >
