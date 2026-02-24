@@ -16,10 +16,10 @@ export default function ContactHero() {
         <h1 className="text-white font-bold text-4xl md:text-5xl mb-8">
           Contact Us
         </h1>
-        <p className="text-white/60 text-base leading-relaxed font-mono">
+        <p className="text-white/60 text-base leading-relaxed">
           Have a question, partnership idea, or just want to say hello?
         </p>
-        <p className="text-white/60 text-base leading-relaxed font-mono mt-2">
+        <p className="text-white/60 text-base leading-relaxed mt-2">
           Fill out the form below and we'll get back to you as soon as we can or drop an email.
         </p>
       </div>
