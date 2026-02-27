@@ -6,9 +6,7 @@ export default function BrandsHero() {
           Our <span className="text-[var(--yellow)]">Portfolio</span>
         </h1>
         <p className="text-white/60 text-base leading-relaxed">
-          Explore the sites we own and operate — each one built to serve a real audience and deliver
-          real value. Every brand on this list is something we're proud of, and every project
-          reflects our focus on quality, trust, and growth.
+          Take a look at the sites we own and operate. Each brand serves a real audience and is built with care, clarity, and purpose. We’re proud of the work behind every project, and each one reflects our commitment to quality, trust, and steady growth.
         </p>
       </div>
     </section>

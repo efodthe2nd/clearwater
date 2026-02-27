@@ -34,6 +34,38 @@ const brands = [
     imageSrc: '/brands/america-rewind/preview.png',
     imageRight: false,
   },
+  {
+    slug: 'anxious-adult',
+    name: 'The Anxious Adult',
+    description:
+      'The Anxious Adult is a steady guide for anyone learning how to navigate life without a manual. It covers everything from everyday responsibilities and home decisions to travel ideas and nostalgic escapes that help you breathe a little easier. The site focuses on clear advice, practical tools, and small wins that make grown-up life feel less chaotic and more manageable.',
+    imageSrc: '/brands/anxiousadult/preview.png',
+    imageRight: true,
+  },
+  {
+    slug: 'just-dip-recipes',
+    name: 'Just Dip Recipes',
+    description:
+      'Just Dip Recipes brings cooking back to a simple idea: food should be enjoyable, doable, and worth sharing. It started with dips, but now the site covers everything from quick weeknight dishes to hosting tips that fit into real schedules. Every recipe is tested with busy lives in mind, making it a go-to spot for home cooks who want flavor without fuss.',
+    imageSrc: '/brands/just-dip/preview.png',
+    imageRight: false,
+  },
+  {
+    slug: 'the-amazing-mom-life',
+    name: 'The Amazing Mom Life',
+    description:
+      'The Amazing Mom Life is where real families find stories, ideas, and inspiration that make daily life feel warmer and more meaningful. From home and lifestyle tips to travel ideas and nostalgic throwbacks, the site blends practical guidance with heart. It’s a place where moms (and the people they love) find connection, encouragement, and a reminder that family life is more than a checklist.',
+    imageSrc: '/brands/theamazingmomlife/preview.png',
+    imageRight: true,
+  },
+  {
+    slug: 'bushcraft-base-camp',
+    name: 'Bushcraft Base Camp',
+    description:
+      'Bushcraft Base Camp is built for anyone drawn to the outdoors, whether you’re learning your first knife skill or planning a weekend deep in the woods. The site shares reliable bushcraft techniques, gear insights, and stories from people who live for time outside. It’s rooted in real experience and a respect for nature, helping readers feel confident and prepared for their next adventure.',
+    imageSrc: '/brands/bushcraftbasecamp/preview.png',
+    imageRight: false,
+  },
 ]
 
 export default function BrandsList() {
