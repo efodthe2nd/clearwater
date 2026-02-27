@@ -27,14 +27,14 @@ export default function ContactSection() {
                   href="mailto:john@ClearwaterMediaGroup.com"
                   className="text-white/70 text-sm hover:text-[var(--yellow)] transition-colors"
                 >
-                  john@ClearwaterMediaGroup.com
+                  john@clearwatermediagroup.com
                 </a>
               </div>
 
               <div>
                 <p className="text-white font-bold text-sm">Address:</p>
                 <p className="text-white/70 text-sm">
-                  30N Gould st, sheridan, wyoming 82801
+                  30N Gould St, Sheridan, Wyoming 82801
                 </p>
               </div>
             </div>

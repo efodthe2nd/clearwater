@@ -7,7 +7,7 @@ const features = [
       </svg>
     ),
     title: 'Quick Closings:',
-    description: 'Most sites are sold and paid for within 7–10 days',
+    description: 'Most sites are purchased and paid for within 7 to 10 days.',
   },
   {
     icon: (
@@ -16,8 +16,8 @@ const features = [
         <path d="M9 12l2 2 4-4" stroke="#0a0a0a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
-    title: 'Honest Offers:',
-    description: 'We use real traffic and revenue data to give you a fair price',
+    title: 'Fair Offers:',
+    description: 'We base our valuation on real traffic and revenue data so you know the price is grounded in facts.',
   },
   {
     icon: (
@@ -26,7 +26,7 @@ const features = [
       </svg>
     ),
     title: 'Safe & Simple:',
-    description: 'Clear contracts, secure payments, and help at every step',
+    description: 'Clear contracts, secure payments, and guidance at every step.',
   },
 ]
 
@@ -47,12 +47,12 @@ export default function WeBuySitesSection() {
         <div className="text-center mb-16">
           <h2 className="font-black leading-tight" style={{ marginBottom: 'var(--mb-h2)' }}>
             <span className="text-[var(--yellow)] block" style={{ fontSize: 'var(--font-h2)' }}>We Buy Sites</span>
-            <span className="text-white block" style={{ fontSize: 'var(--font-h2)' }}>Fast, Fair, No Hassle</span>
+            <span className="text-white block" style={{ fontSize: 'var(--font-h2)' }}>Fast, Fair, and Straightforward</span>
           </h2>
           <p className="text-white/50 mt-5 text-base leading-relaxed">
-            We keep it simple: get a real offer, quick and secure payout, and zero runaround.
+            We keep things simple. You get a clear offer, a secure payout, and a smooth process from start to finish.
             <br />
-            Most sales close in under two weeks.
+            Most deals wrap up within a week or two.
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export default function WeBuySitesSection() {
             </span>
             <p className="text-white font-semibold text-base mt-2">Days Maximum</p>
             <p className="text-white/60 text-sm mt-1">
-              We Close Most Deals{' '}
+              Most deals close{' '}
               <span className="text-[var(--yellow)] font-semibold">in 7 to 10 Days</span>
             </p>
           </div>
