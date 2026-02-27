@@ -5,6 +5,7 @@ import OurMission from '../about/OurMission'
 import OurFounders from '../about/OurFounders'
 import AboutCTA from '../about/AboutCTA'
 import AboutFooter from '../about/AboutFooter'
+import HowWeWork from './HowWeWork'
 
 export default function AboutPage() {
   return (
@@ -14,6 +15,7 @@ export default function AboutPage() {
       <OurStory />
       <OurMission />
       <OurFounders />
+      <HowWeWork />
       <AboutCTA />
       <AboutFooter />
     </main>
