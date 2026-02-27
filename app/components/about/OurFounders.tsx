@@ -2,12 +2,12 @@ const founders = [
   {
     name: 'John Abraham',
     role: 'Partner',
-    bio: 'Strategy, partnerships, and the business side of things. John makes sure every new project fits our vision and meets the highest standards.',
+    bio: 'John leads strategy, partnerships, and the business side of the company. He keeps every acquisition and new project aligned with our long-term vision and makes sure the work we ship meets the standards we hold for ourselves.',
   },
   {
     name: 'Mathew Abraham',
     role: 'Partner',
-    bio: 'Strategy, partnerships, and the business side of things. John makes sure every new project fits our vision and meets the highest standards.',
+    bio: 'Mathew oversees growth, operations, and the day-to-day side of running our brands. He works closely with teams across the company to ensure each site delivers clear value and keeps moving forward.',
   },
 ]
 
