@@ -54,17 +54,17 @@ export default function WhyUs() {
   return (
     <section className="bg-[#0a0a0a] py-20 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-white font-bold text-3xl md:text-4xl text-center mb-12">
+        <h2 className="text-white font-bold text-center" style={{ fontSize: 'var(--font-h2)', marginBottom: 'var(--mb-h2)' }}>
           Why Us ?
         </h2>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 mt-12">
           {reasons.map((r) => (
             <div key={r.title} className="flex flex-col items-center text-center gap-3">
               <div className="w-12 h-12 rounded-full bg-[#161616] flex items-center justify-center border border-white/10">
                 {r.icon}
               </div>
-              <h3 className="text-white font-bold text-xs">{r.title}</h3>
+              <h3 className="text-white font-semibold" style={{ fontSize: '14px', marginBottom: '4px' }}>{r.title}</h3>
               <p className="text-white/40 text-xs leading-relaxed">{r.description}</p>
             </div>
           ))}

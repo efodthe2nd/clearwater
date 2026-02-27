@@ -24,22 +24,22 @@ export default function HeroSection() {
       {/* Hero content */}
       <div className="relative z-10 flex flex-col justify-center flex-1 max-w-7xl mx-auto px-6 w-full pt-36 pb-28">
         <div className="max-w-xl">
-          <h1 className="font-black leading-[0.88] tracking-tight">
+          <h1 className="font-black leading-[0.88] tracking-tight" style={{ marginBottom: 'var(--mb-h1)' }}>
             <span
-              className="block text-[#fbd405]"
-              style={{ fontSize: 'clamp(3.5rem, 9vw, 7.5rem)' }}
+              className="block text-[var(--yellow)]"
+              style={{ fontSize: 'var(--font-h1)' }}
             >
               Clearwater
             </span>
             <span
-              className="block text-[#fbd405]"
-              style={{ fontSize: 'clamp(3.5rem, 9vw, 7.5rem)' }}
+              className="block text-[var(--yellow)]"
+              style={{ fontSize: 'var(--font-h1)' }}
             >
               Media
             </span>
             <span
               className="block text-white"
-              style={{ fontSize: 'clamp(3.5rem, 9vw, 7.5rem)' }}
+              style={{ fontSize: 'var(--font-h1)' }}
             >
               Group
             </span>

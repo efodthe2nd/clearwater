@@ -25,11 +25,11 @@ export default function HowItWorks() {
   return (
     <section className="bg-[#0a0a0a] py-20 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-white font-bold text-3xl md:text-4xl text-center mb-12">
+        <h2 className="text-white font-bold text-center" style={{ fontSize: 'var(--font-h2)', marginBottom: 'var(--mb-h2)' }}>
           How it works
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-12">
           {steps.map((step) => (
             <div
               key={step.number}
@@ -38,7 +38,7 @@ export default function HowItWorks() {
               <div className="w-8 h-8 rounded-full bg-[#fbd305] flex items-center justify-center mb-4">
                 <span className="text-black font-black text-sm">{step.number}</span>
               </div>
-              <h3 className="text-white font-bold text-sm mb-3">{step.title}</h3>
+              <h3 className="text-white font-bold" style={{ fontSize: '18px', marginBottom: '8px' }}>{step.title}</h3>
               <p className="text-white/50 text-xs leading-relaxed">{step.description}</p>
             </div>
           ))}

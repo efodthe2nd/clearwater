@@ -60,7 +60,7 @@ export default function Navbar() {
                 <Link
                   href={link.href}
                   className={`text-sm font-medium transition-colors duration-200 relative group ${
-                    isActive ? 'text-[#fbd305]' : 'text-white/70 hover:text-white'
+                    isActive ? 'text-[var(--yellow)]' : 'text-white/70 hover:text-white'
                   }`}
                 >
                   {link.label}

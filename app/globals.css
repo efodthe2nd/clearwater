@@ -3,11 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --yellow: #f0c340;
+  --yellow: #E8C200;
   --black: #0a0a0a;
   --dark: #111111;
-  --gray: #1a1a1a;
-  --white: #ffffff;
+  --gray: #B3B3B3;
+  --white: #EAEAEA;
+  --font-h1: 70px;
+  --font-h2: 50px;
+  --font-h3: 30px;
+  --mb-h1: 24px;
+  --mb-h2: 16px;
+  --mb-h3: 12px;
 }
 
 * {

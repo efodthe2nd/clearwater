@@ -50,7 +50,7 @@ export default function PaymentProcess() {
   return (
     <section className="bg-[#0a0a0a] py-20 px-6">
       <div className="max-w-2xl mx-auto">
-        <h2 className="text-white font-bold text-3xl md:text-4xl text-center mb-4">
+        <h2 className="text-white font-bold text-center" style={{ fontSize: 'var(--font-h2)', marginBottom: 'var(--mb-h2)' }}>
           Payment Process?
         </h2>
         <p className="text-white/50 text-sm text-center mb-12">
@@ -65,7 +65,7 @@ export default function PaymentProcess() {
             >
               <div className="flex items-center gap-3 mb-4">
                 {p.icon}
-                <h3 className="text-white font-bold text-base">{p.title}</h3>
+                <h3 className="text-white font-bold" style={{ fontSize: '20px', marginBottom: '8px' }}>{p.title}</h3>
               </div>
               <p className="text-white/50 text-sm leading-relaxed">{p.description}</p>
             </div>

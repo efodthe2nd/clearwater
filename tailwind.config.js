@@ -11,7 +11,7 @@ module.exports = {
       },
       colors: {
         yellow: {
-          brand: '#fbd305',
+          brand: '#E8C200',
         },
       },
     },

@@ -13,7 +13,7 @@ export default function ContactHero() {
       />
 
       <div className="relative z-10 max-w-2xl mx-auto">
-        <h1 className="text-white font-bold text-4xl md:text-5xl mb-8">
+        <h1 className="text-white font-bold leading-tight" style={{ fontSize: 'var(--font-h1)', marginBottom: 'var(--mb-h1)' }}>
           Contact Us
         </h1>
         <p className="text-white/60 text-base leading-relaxed">

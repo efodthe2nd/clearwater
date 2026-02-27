@@ -54,7 +54,7 @@ export default function BrandsSection() {
     <section id="brands" className="bg-[var(--black)] py-24 px-6">
       <div className="max-w-7xl mx-auto">
 
-        <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-16">
+        <h2 className="text-white text-4xl md:text-5xl font-bold text-center" style={{ fontSize: 'var(--font-h2)', marginBottom: 'var(--mb-h2)' }}>
           Our Brands
         </h2>
 

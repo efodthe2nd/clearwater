@@ -9,14 +9,14 @@ export default function ContactSection() {
 
       <div className="max-w-7xl mx-auto">
         {/* Top label */}
-        <p className="text-[#fbd305] text-sm font-semibold mb-3 tracking-wide">
+        <p className="text-[var(--yellow)] text-sm font-semibold mb-3 tracking-wide">
           Clearwater ®
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
           {/* Left: Contact info */}
           <div>
-            <h2 className="text-white font-black text-5xl md:text-7xl leading-tight mb-10">
+            <h2 className="text-white font-black leading-tight" style={{ fontSize: 'var(--font-h2)', marginBottom: 'var(--mb-h2)' }}>
               Get in touch
             </h2>
 
@@ -25,7 +25,7 @@ export default function ContactSection() {
                 <p className="text-white font-bold text-sm">Email:</p>
                 <a
                   href="mailto:john@ClearwaterMediaGroup.com"
-                  className="text-white/70 text-sm hover:text-[#fbd305] transition-colors"
+                  className="text-white/70 text-sm hover:text-[var(--yellow)] transition-colors"
                 >
                   john@ClearwaterMediaGroup.com
                 </a>
