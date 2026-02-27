@@ -46,7 +46,7 @@ export default function HeroSection() {
           </h1>
 
           <p className="mt-6 text-white/60 text-base md:text-lg font-light max-w-xs leading-relaxed">
-            We launch, grow, and turn ideas into thriving digital destinations.
+            We acquire websites and turn them into thriving businesses
           </p>
         </div>
       </div>
