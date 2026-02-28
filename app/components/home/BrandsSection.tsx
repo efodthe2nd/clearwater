@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
 
 const brands = [
@@ -45,7 +45,7 @@ const brands = [
     slug: 'anxious-adult',
     name: 'The Anxious Adult',
     description:
-      'The Anxious Adult is a steady guide for anyone learning how to navigate life without a manual. It covers everything from everyday responsibilities and home decisions to travel ideas and nostalgic escapes that help you breathe a little easier. The site focuses on clear advice, practical tools, and small wins that make grown-up life feel less chaotic and more manageable.',
+      'The Anxious Adult is a steady guide for anyone learning how to navigate life without a manual. It covers everything from everyday responsibilities and home decisions to travel ideas and nostalgic escapes that help you breathe a little easier.',
     logoSrc: '/brands/anxiousadult/logo.png',
     previewSrc: '/brands/anxiousadult/preview.png',
   },
@@ -54,7 +54,7 @@ const brands = [
     slug: 'just-dip-recipes',
     name: 'Just Dip Recipes',
     description:
-      'Just Dip Recipes brings cooking back to a simple idea: food should be enjoyable, doable, and worth sharing. It started with dips, but now the site covers everything from quick weeknight dishes to hosting tips that fit into real schedules. Every recipe is tested with busy lives in mind, making it a go-to spot for home cooks who want flavor without fuss.',
+      'Just Dip Recipes brings cooking back to a simple idea: food should be enjoyable, doable, and worth sharing. Every recipe is tested with busy lives in mind, making it a go-to spot for home cooks who want flavor without fuss.',
     logoSrc: '/brands/just-dip/logo.png',
     previewSrc: '/brands/just-dip/preview.png',
   },
@@ -63,7 +63,7 @@ const brands = [
     slug: 'the-amazing-mom-life',
     name: 'The Amazing Mom Life',
     description:
-      'The Amazing Mom Life is where real families find stories, ideas, and inspiration that make daily life feel warmer and more meaningful. From home and lifestyle tips to travel ideas and nostalgic throwbacks, the site blends practical guidance with heart. It’s a place where moms (and the people they love) find connection, encouragement, and a reminder that family life is more than a checklist.',
+      'The Amazing Mom Life is where real families find stories, ideas, and inspiration that make daily life feel warmer and more meaningful. From home and lifestyle tips to travel ideas and nostalgic throwbacks.',
     logoSrc: '/brands/theamazingmomlife/logo.png',
     previewSrc: '/brands/theamazingmomlife/preview.png',
   },
@@ -72,32 +72,77 @@ const brands = [
     slug: 'bushcraft-base-camp',
     name: 'Bushcraft Base Camp',
     description:
-      'Bushcraft Base Camp is built for anyone drawn to the outdoors, whether you’re learning your first knife skill or planning a weekend deep in the woods. The site shares reliable bushcraft techniques, gear insights, and stories from people who live for time outside. It’s rooted in real experience and a respect for nature, helping readers feel confident and prepared for their next adventure.',
+      'Bushcraft Base Camp is built for anyone drawn to the outdoors, whether you\'re learning your first knife skill or planning a weekend deep in the woods. Reliable techniques, gear insights, and real stories.',
     logoSrc: '/brands/bushcraftbasecamp/logo.png',
     previewSrc: '/brands/bushcraftbasecamp/preview.png',
   },
 ]
 
+// Reusable hook — fires once when element enters viewport
+function useInView(threshold = 0.2) {
+  const ref = useRef<HTMLDivElement>(null)
+  const [inView, setInView] = useState(false)
+
+  useEffect(() => {
+    const el = ref.current
+    if (!el) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true)
+          observer.disconnect()
+        }
+      },
+      { threshold }
+    )
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [threshold])
+
+  return { ref, inView }
+}
+
 export default function BrandsSection() {
   const [active, setActive] = useState(0)
   const brand = brands[active]
+
+  const { ref: sectionRef, inView } = useInView(0.45)
 
   function goNext() {
     setActive((prev) => (prev + 1) % brands.length)
   }
 
+  const EASE = 'cubic-bezier(0.16, 1, 0.3, 1)'
+
   return (
-    <section id="brands" className="bg-[var(--black)] py-24 px-6">
+    <section id="brands" className="bg-[var(--black)] py-24 px-6" ref={sectionRef}>
       <div className="max-w-7xl mx-auto">
 
-        <h2 className="text-white text-4xl md:text-5xl font-bold text-center" style={{ fontSize: 'var(--font-h2)', marginBottom: 'var(--mb-h2)' }}>
+        {/* Title — fades up first */}
+        <h2
+          className="text-white font-bold text-center"
+          style={{
+            fontSize: 'var(--font-h2)',
+            marginBottom: '3rem',
+            opacity: inView ? 1 : 0,
+            transform: inView ? 'translateY(0)' : 'translateY(24px)',
+            transition: `opacity 1s ${EASE}, transform 1s ${EASE}`,
+          }}
+        >
           Our Brands
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
 
-          {/* Left: Website Preview */}
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200">
+          {/* Left card — slides in from left */}
+          <div
+            className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-200"
+            style={{
+              opacity: inView ? 1 : 0,
+              transform: inView ? 'translateX(0)' : 'translateX(-48px)',
+              transition: `opacity 1s ${EASE} 250ms, transform 1s ${EASE} 250ms`,
+            }}
+          >
             <Image
               src={brand.previewSrc}
               alt={`${brand.name} preview`}
@@ -106,9 +151,15 @@ export default function BrandsSection() {
             />
           </div>
 
-          {/* Right: Brand Info */}
-          <div className="bg-[#fbd405] rounded-2xl p-8 flex flex-col gap-6">
-
+          {/* Right card — slides in from right + scale up */}
+          <div
+            className="bg-[#fbd405] rounded-2xl p-8 flex flex-col gap-6"
+            style={{
+              opacity: inView ? 1 : 0,
+              transform: inView ? 'translateX(0) scale(1)' : 'translateX(48px) scale(0.97)',
+              transition: `opacity 1s ${EASE} 450ms, transform 1s ${EASE} 450ms`,
+            }}
+          >
             {/* Logo */}
             <div className="relative h-9 w-40 self-start">
               <Image
@@ -140,8 +191,15 @@ export default function BrandsSection() {
           </div>
         </div>
 
-        {/* Dots */}
-        <div className="flex justify-center gap-3 mt-10">
+        {/* Dots — fade up last */}
+        <div
+          className="flex justify-center gap-3 mt-10"
+          style={{
+            opacity: inView ? 1 : 0,
+            transform: inView ? 'translateY(0)' : 'translateY(16px)',
+            transition: `opacity 0.9s ${EASE} 700ms, transform 0.9s ${EASE} 700ms`,
+          }}
+        >
           {brands.map((_, i) => (
             <button
               key={i}
