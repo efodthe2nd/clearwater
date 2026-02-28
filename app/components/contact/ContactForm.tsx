@@ -24,12 +24,6 @@ export default function ContactForm() {
   return (
     <section className="relative bg-[#0a0a0a] py-16 px-6 pb-48 overflow-hidden">
 
-      <PageReveal delay={600}>
-        <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 text-[20vw] font-black text-white/5 leading-none select-none pointer-events-none whitespace-nowrap">
-          ClearWater
-        </div>
-      </PageReveal>
-
       <div className="max-w-5xl mx-auto relative z-10">
 
         <PageReveal delay={400}>
@@ -95,6 +89,11 @@ export default function ContactForm() {
           to   { opacity: 1; transform: translateX(0); }
         }
       `}</style>
+      <PageReveal delay={600}>
+        <div className="absolute -bottom-45 left-1/2 -translate-x-1/2 text-[20vw] font-black text-white/5 leading-none select-none pointer-events-none whitespace-nowrap">
+          ClearWater
+        </div>
+      </PageReveal>
     </section>
   )
 }
