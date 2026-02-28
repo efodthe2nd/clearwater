@@ -1,3 +1,5 @@
+import ScrollReveal from '../ui/ScrollReveal'
+
 const founders = [
   {
     name: 'John Abraham',
@@ -15,23 +17,43 @@ export default function OurFounders() {
   return (
     <section className="relative bg-[#0a0a0a] py-20 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-white font-bold text-center" style={{ fontSize: 'var(--font-h2)', marginBottom: 'var(--mb-h2)' }}>
-          Our Founders
-        </h2>
+
+        <ScrollReveal>
+          <h2 className="text-white font-bold text-center" style={{ fontSize: 'var(--font-h2)', marginBottom: 'var(--mb-h2)' }}>
+            Our Founders
+          </h2>
+        </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-16">
-          {founders.map((founder) => (
-            <div key={founder.name} className="text-center md:text-left">
+          <ScrollReveal direction="left" delay={150}>
+            <div className="text-center md:text-left">
               <div className="flex items-center gap-3 justify-center md:justify-start mb-2">
-                <h3 className="text-white font-black" style={{ fontSize: 'var(--font-h3)', marginBottom: 'var(--mb-h3)' }}>{founder.name}</h3>
+                <h3 className="text-white font-black" style={{ fontSize: 'var(--font-h3)', marginBottom: 'var(--mb-h3)' }}>
+                  {founders[0].name}
+                </h3>
                 <span className="border border-[#fbd305] text-[var(--yellow)] text-xs font-semibold px-3 py-1 rounded-full">
-                  {founder.role}
+                  {founders[0].role}
                 </span>
               </div>
-              <p className="text-white/60 text-base leading-relaxed">{founder.bio}</p>
+              <p className="text-white/60 text-base leading-relaxed">{founders[0].bio}</p>
             </div>
-          ))}
+          </ScrollReveal>
+
+          <ScrollReveal direction="right" delay={150}>
+            <div className="text-center md:text-left">
+              <div className="flex items-center gap-3 justify-center md:justify-start mb-2">
+                <h3 className="text-white font-black" style={{ fontSize: 'var(--font-h3)', marginBottom: 'var(--mb-h3)' }}>
+                  {founders[1].name}
+                </h3>
+                <span className="border border-[#fbd305] text-[var(--yellow)] text-xs font-semibold px-3 py-1 rounded-full">
+                  {founders[1].role}
+                </span>
+              </div>
+              <p className="text-white/60 text-base leading-relaxed">{founders[1].bio}</p>
+            </div>
+          </ScrollReveal>
         </div>
+
       </div>
     </section>
   )
