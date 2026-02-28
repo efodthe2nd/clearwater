@@ -15,11 +15,17 @@ const navLinks = [
 export default function Navbar() {
   const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    // Trigger entrance — slight delay so page paint completes first
+    const t = setTimeout(() => setMounted(true), 50)
     const onScroll = () => setScrolled(window.scrollY > 40)
     window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
+    return () => {
+      clearTimeout(t)
+      window.removeEventListener('scroll', onScroll)
+    }
   }, [])
 
   return (
@@ -27,10 +33,15 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 px-6 py-4 transition-all duration-300 ${
         scrolled ? 'bg-black/80 backdrop-blur-md' : 'bg-transparent'
       }`}
+      style={{
+        opacity: mounted ? 1 : 0,
+        transform: mounted ? 'translateY(0)' : 'translateY(-16px)',
+        transition: 'opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s',
+      }}
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
 
-        {/* Logo — swaps on scroll */}
+        {/* Logo */}
         <Link href="/" className="flex-shrink-0 h-10 relative w-[160px]">
           <Image
             src="/logos/logo-default.png"
@@ -53,10 +64,17 @@ export default function Navbar() {
 
         {/* Nav Links */}
         <ul className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => {
+          {navLinks.map((link, i) => {
             const isActive = pathname === link.href
             return (
-              <li key={link.href}>
+              <li
+                key={link.href}
+                style={{
+                  opacity: mounted ? 1 : 0,
+                  transform: mounted ? 'translateY(0)' : 'translateY(-8px)',
+                  transition: `opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${80 + i * 60}ms, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${80 + i * 60}ms`,
+                }}
+              >
                 <Link
                   href={link.href}
                   className={`text-sm font-medium transition-colors duration-200 relative group ${
@@ -73,24 +91,32 @@ export default function Navbar() {
           })}
         </ul>
 
-        {/* CTA — dark pill with arrow icon */}
-        <Link
-  href="/contact"
-  className="flex items-center gap-3 bg-[#1c1c1c] border border-white/10 rounded-full px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#fbd305] hover:text-black hover:border-transparent transition-all duration-300 group"
->
-  Contact Us
-  <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 group-hover:bg-black/20">
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-      <path
-        d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  </span>
-</Link>
+        {/* CTA */}
+        <div
+          style={{
+            opacity: mounted ? 1 : 0,
+            transform: mounted ? 'translateY(0)' : 'translateY(-8px)',
+            transition: 'opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1) 360ms, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) 360ms',
+          }}
+        >
+          <Link
+            href="/contact"
+            className="flex items-center gap-3 bg-[#1c1c1c] border border-white/10 rounded-full px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#fbd305] hover:text-black hover:border-transparent transition-all duration-300 group"
+          >
+            Contact Us
+            <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center transition-all duration-300 group-hover:bg-black/20">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path
+                  d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </span>
+          </Link>
+        </div>
 
       </nav>
     </header>

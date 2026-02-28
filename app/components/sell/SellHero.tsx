@@ -7,9 +7,7 @@ export default function SellHero() {
           <span className="text-[var(--yellow)]">a week</span>
         </h1>
         <p className="text-white/60 text-base leading-relaxed max-w-xl mx-auto">
-          We buy blogs and content sites of all sizes — whether you're just starting out or ready to
-          move on. Want a real offer? Talk to us. Most deals wrap up in 7–10 days. Not sure if your
-          site qualifies? Reach out and let's find out together.
+         We buy blogs and content sites of all sizes, whether you're growing fast or ready to step away. If you want a straight answer and a real offer, reach out. Most sales wrap up in seven to ten days. Not sure if your site qualifies? Tell us about it and we’ll figure it out together.
         </p>
       </div>
     </section>

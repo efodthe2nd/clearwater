@@ -19,12 +19,10 @@ export default function SellCTA() {
             <span className="text-[var(--yellow)]">Talk</span>
           </h2>
           <p className="text-white/50 text-sm font-mono leading-relaxed mb-8 max-w-md mx-auto">
-            Doesn't matter if your site is booming or just getting by — we'll give you a fair,
-            no-pressure valuation within 48 hours. Unsure if we're the right fit? That's why we're
-            here. Ask anything.
+            Whether your site is growing fast or barely being updated, we’ll give you a fair, no-pressure valuation within 48 hours. If you’re unsure whether we’re the right fit, ask us anything. That’s what we’re here for.
             <br />
             <br />
-            Let's see what's possible.
+            Let's find out what's possible.
           </p>
           <a
             href="/contact"

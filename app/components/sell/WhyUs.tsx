@@ -6,7 +6,7 @@ const reasons = [
       </svg>
     ),
     title: 'Fast Closings',
-    description: 'Most deals finish in 7–10 days — no waiting months for payout.',
+    description: 'Most deals wrap up in seven to ten days. No long waits to get paid.',
   },
   {
     icon: (
@@ -16,7 +16,7 @@ const reasons = [
       </svg>
     ),
     title: 'Safe Payments',
-    description: 'Every transaction goes through escrow.com for complete peace of mind.',
+    description: 'Every payment goes through Escrow.com for added security and peace of mind.',
   },
   {
     icon: (
@@ -26,7 +26,7 @@ const reasons = [
       </svg>
     ),
     title: 'No Headaches',
-    description: 'Clear terms, simple steps. No endless forms or drawn-out talks.',
+    description: 'Clear terms and simple steps. No endless forms or dragged-out calls.',
   },
   {
     icon: (
@@ -36,7 +36,7 @@ const reasons = [
       </svg>
     ),
     title: 'Proven Track Record',
-    description: 'Streamlined processes from years of real results.',
+    description: 'Our process is shaped by years of buying and operating content sites.',
   },
   {
     icon: (
@@ -46,7 +46,7 @@ const reasons = [
       </svg>
     ),
     title: 'Any Site, Any Stage',
-    description: 'We buy established sites, new projects, and everything in between.',
+    description: 'We buy established sites, growing projects, and everything in between.',
   },
 ]
 

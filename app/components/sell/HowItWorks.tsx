@@ -2,22 +2,22 @@ const steps = [
   {
     number: '1',
     title: 'Reach Out',
-    description: 'Get in touch and tell us about your site. We\'ll respond within 48 hours with a first-look offer.',
+    description: 'Tell us about your site. We’ll take a quick look and send a first offer within 48 hours.',
   },
   {
     number: '2',
     title: 'Review & Verify',
-    description: 'We review your site\'s numbers — traffic, earnings, and key details. No endless paperwork.',
+    description: 'We go through your traffic, earnings, and key details. Nothing complicated, no endless forms.',
   },
   {
     number: '3',
     title: 'Sign & Transfer',
-    description: 'Agree on terms, sign a simple agreement and transfer site access after funds are secured in escrow.',
+    description: 'Once we agree on terms, you sign a simple contract and transfer site access after the funds are secured in escrow.',
   },
   {
     number: '4',
     title: 'Get Paid',
-    description: 'You get your money through escrow. We are done within 5–7 days start to finish.',
+    description: 'Your payment clears through escrow. Start to finish, most deals close in five to seven days.',
   },
 ]
 
