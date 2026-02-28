@@ -8,9 +8,9 @@
   --dark: #111111;
   --gray: #B3B3B3;
   --white: #EAEAEA;
-  --font-h1: 70px;
-  --font-h2: 50px;
-  --font-h3: 30px;
+  --font-h1: clamp(2.8rem, 8vw, 70px);
+  --font-h2: clamp(2rem, 5vw, 50px);
+  --font-h3: clamp(1.4rem, 3vw, 30px);
   --mb-h1: 24px;
   --mb-h2: 16px;
   --mb-h3: 12px;

@@ -61,7 +61,7 @@ export default function HeroSection() {
       {/* Hero content */}
       <div className="relative z-10 flex flex-col justify-center flex-1 max-w-7xl mx-auto px-6 w-full pt-36 pb-28">
         <div className="max-w-xl">
-          <h1 className="font-black leading-[0.88] tracking-tight" style={{ marginBottom: 'var(--mb-h1)' }}>
+          <h1 className="font-black leading-[1.05] md:leading-[0.92] tracking-tight" style={{ marginBottom: 'var(--mb-h1)' }}>
 
             {/* Line 1 — Clearwater */}
             <span
