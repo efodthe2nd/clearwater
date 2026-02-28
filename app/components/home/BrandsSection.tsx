@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react'
 import Image from 'next/image'
+import useInView from '../../hooks/UseInView'
 
 const brands = [
   {
@@ -77,30 +78,6 @@ const brands = [
     previewSrc: '/brands/bushcraftbasecamp/preview.png',
   },
 ]
-
-// Reusable hook — fires once when element enters viewport
-function useInView(threshold = 0.2) {
-  const ref = useRef<HTMLDivElement>(null)
-  const [inView, setInView] = useState(false)
-
-  useEffect(() => {
-    const el = ref.current
-    if (!el) return
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setInView(true)
-          observer.disconnect()
-        }
-      },
-      { threshold }
-    )
-    observer.observe(el)
-    return () => observer.disconnect()
-  }, [threshold])
-
-  return { ref, inView }
-}
 
 export default function BrandsSection() {
   const [active, setActive] = useState(0)
