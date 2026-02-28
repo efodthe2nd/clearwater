@@ -57,7 +57,14 @@ export default function ContactForm() {
           <SideReveal from="right" delay={580}>
             <div
               className="rounded-2xl p-8 space-y-6"
-              style={{ background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)' }}
+              style={{
+                background: `
+                  radial-gradient(circle, rgba(255,255,255,0.07) 1.5px, transparent 1px),
+                  rgba(255,255,255,0.03)
+                `,
+                backgroundSize: '24px 24px',
+                border: '1px solid rgba(255,255,255,0.08)',
+              }}
             >
               <div>
                 <input type="text" placeholder="Name" className="w-full bg-transparent border-b border-white/20 pb-3 text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-[#F7F217] transition-colors" />
@@ -90,7 +97,7 @@ export default function ContactForm() {
         }
       `}</style>
       <PageReveal delay={600}>
-        <div className="absolute -bottom-45 left-1/2 -translate-x-1/2 text-[20vw] font-black text-white/5 leading-none select-none pointer-events-none whitespace-nowrap">
+        <div className="absolute -bottom-47 left-1/2 -translate-x-1/2 text-[20vw] font-black text-white/5 leading-none select-none pointer-events-none whitespace-nowrap">
           ClearWater
         </div>
       </PageReveal>
