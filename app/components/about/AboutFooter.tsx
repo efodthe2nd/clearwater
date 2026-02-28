@@ -5,7 +5,7 @@ export default function AboutFooter() {
     <>
       <div className="relative bg-[#0a0a0a] h-40 overflow-x-clip overflow-y-clip">
         <ScrollReveal threshold={0.1}>
-          <div className="absolute -bottom-24 left-1/2 -translate-x-1/2 text-[20vw] font-black text-white/5 leading-none select-none pointer-events-none whitespace-nowrap">
+          <div className="absolute -bottom-64 left-1/2 -translate-x-1/2 text-[20vw] font-black text-white/5 leading-none select-none pointer-events-none whitespace-nowrap">
             ClearWater
           </div>
         </ScrollReveal>
